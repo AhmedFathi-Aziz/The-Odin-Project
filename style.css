@@ -1,0 +1,29 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+nav {
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    color: white;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.conatiner {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    gap: 15px;
+}
+.project {
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 2px;
+}
+.project img {
+    width: 100%;
+}
