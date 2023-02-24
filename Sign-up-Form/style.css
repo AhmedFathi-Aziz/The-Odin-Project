@@ -1,0 +1,174 @@
+@font-face {
+    font-family: thefont;
+    src: url(./fonts/Norse-Bold.otf);
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+@media (max-width: 1060px) {
+    .left {
+        display: none;
+    }
+    .first h2 {
+        font-size: 17px;
+    }
+}
+@media (max-width: 765px) {
+    .first h2 {
+        font-size: 14px;
+    }
+}
+@media (max-width: 617px) {
+    form {
+        flex-direction: column !important;
+        margin-left: 130px !important;
+    }
+    .second {
+        height: 80vh;
+        width: 50vw;
+    }
+    .third {
+        margin-top: 210px;
+        margin-left: 85px !important;
+    }
+    .third button {
+        padding: 10px 20px !important;
+    }
+    .third p {
+        font-size: 14px;
+    }
+    .right {
+        background-color: white !important;
+    }
+    .second {
+        box-shadow: none !important;
+    }
+    .first {
+        display: none !important;
+    }
+    .second h3 {
+        margin-left: 130px !important;
+    }
+}
+@media (max-width: 485px) {
+    .third {
+        width: 200px;
+    }
+    .third p {
+        font-size: 9px;;
+    }
+    .third button {
+        font-size: 12px !important;
+    }
+}
+.left {
+    background-image: url('./images/odin.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35vw;
+    color: white;
+}
+.right {
+    display: flex;
+    background-color: #fafafa;
+    width: calc(100vw - 35vw);
+    flex-direction: column;
+}
+.first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 30vh;
+}
+.second {
+    height: 40vh;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 5px #E5E7EB;
+    width: 900px;
+}
+.second h3 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.third {
+    height: 30vh;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+input {
+    width: 200px;
+    /* border: none; */
+    border: 1px solid #E5E7EB;
+    height: 25px;
+    border-radius: 5px;
+}
+label {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+input:focus {
+    border-color: blue;
+    outline: none;
+    /* border: 1px solid blue; */
+}
+input:invalid {
+    outline: none;
+    border-color:  red;
+}
+.third button {
+    padding: 10px 40px;
+    font-size: 16px;
+    color: white;
+    background-color: #596D48;
+    border: none;
+    margin-left: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 2px 5px #E5E7EB;
+}
+.third p {
+    margin-left: 70px;
+    margin-top: 10px;
+}
+p span {
+    color: #596D48;
+    font-weight: bold;
+}
+#error {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.first {
+    font-size: 15px;
+}
