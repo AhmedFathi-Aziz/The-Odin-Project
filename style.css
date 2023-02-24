@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -11,7 +15,7 @@ nav {
     align-items: center;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 2px;
+    /* border-radius: 2px; */
 }
 .conatiner {
     padding: 10px;
@@ -23,6 +27,19 @@ nav {
     padding: 15px;
     border: 2px solid #333;
     border-radius: 2px;
+    text-align: center;
+    transition: 0.3s;
+}
+.project:hover {
+    background-color: #eee;
+}
+.project a {
+    text-decoration: none;
+}
+.project p {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
 }
 .project img {
     width: 100%;
