@@ -7,3 +7,4 @@
    - etch-a-sketch
 - Full Stack JavaScript
    - sign-up-form
+   - Admin Dashboard
