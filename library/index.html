@@ -11,39 +11,41 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
             <div class="left">
                 <h1>Library</h1>
             </div>
             <div class="right">
-                <a href="">Log in</a>
-                <a href="">GitHub</a>
+                <a href="" id="loginButton">Log in</a>
+                <a href="https://github.com/AhmedFathi-Aziz" id="githubButton" target="_blank">GitHub</a>
             </div>
         </nav>
     </header>
     <div class="add">
         <button id="addBook">+ Add Book</button>
     </div>
-    <main>
+    <main id="themain">
         <h2>Add new book</h2>
         <form action="" id="theform">
             <div class="form-row">
-                <input type="text" name="title" id="title" placeholder="Title">
+                <input type="text" name="title" id="title" placeholder="Title" required>
             </div>
             <div class="form-row">
-                <input type="text" name="author" id="author" placeholder="Author">
+                <input type="text" name="author" id="author" placeholder="Author" required>
             </div>
             <div class="form-row">
-                <input type="number" name="pages" id="pages" placeholder="Pages">
+                <input type="number" name="pages" id="pages" placeholder="Pages" required>
             </div>
             <div class="check">
                 <label for="read">Have you read it?</label>
-                <input type="checkbox" name="read" id="read">
+                <input type="checkbox" name="read" id="read" value="yes">
             </div>
             <button type="submit" id="submitTheForm">Submit</button>
         </form>
     </main>
+    <div id="libraryContent">
+    </div>
     <script src="index.js">
     </script>
 </body>

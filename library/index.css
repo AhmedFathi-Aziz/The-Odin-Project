@@ -7,13 +7,17 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
     background-color: #F0EEF1;
+    transition: 0.3s;
+}
+header {
+    background-color: white;
+    transition: 0.3s;
 }
 nav {
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
 }
 .left h1 {
     font-size: 25px;
@@ -59,14 +63,15 @@ nav {
     cursor: pointer;
 }
 main {
+    display: none;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    border: 1px solid white;
     background-color: #F0EEF1;
     width: 300px;
+    border-radius: 25px;
 }
 main h2 {
     margin-bottom: 10px;
@@ -82,7 +87,10 @@ main h2 {
     border: none;
     border-radius: 6px;
     width: 85%;
-    /* text-align: center;  no no no*/
+}
+.form-row input:focus {
+    outline: none;
+    border: 1px solid #787778;
 }
 .check {
    margin-bottom: 20px;
@@ -91,11 +99,11 @@ main h2 {
 }
 .check label {
     margin-right: 10px;
-    font-size: 16px;
+    font-size: 17px;
 }
 ::placeholder {
     color: black;
-    font-size: 13px;
+    font-size: 15px;
 }
 #submitTheForm {
     color: black;
@@ -103,7 +111,40 @@ main h2 {
     border: none;
     padding: 10px 10px;
     border-radius: 6px;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 18px;
     width: 90%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#submitTheForm:hover {
+    background-color: green;
+    color: white
+}
+#libraryContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.book {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: 0.3s;
+}
+.book button {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
 }
