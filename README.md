@@ -8,3 +8,4 @@
 - Full Stack JavaScript
    - sign-up-form
    - Admin Dashboard
+   - Library
