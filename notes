@@ -1,0 +1,27 @@
+The default layout mode is Flow layout but we can opt in to Flexbox by changing the display property on the parent container
+Variables declared with var, are either function-scoped or global-scoped. they are visible through blocks
+
+In ECMAScript5 (JavaScript 2009) defined a new method Array.isArray()
+    the instanceof operator returns true if an object is created by a given constructor
+
+TDD: Test Driven Development
+
+It's important to note that when using querySelectorAll, then the return value is not an array. It looks like an array,
+and it somewhat acts like an array, but it's realy a "nodelist". the big distinction is that several array methods are 
+missing from nodelist. One solution, if problems arise, is to convert the nodelist into an array.
+you can do this with Array.from() or the spread operator
+
+Note that textContent is preferable for adding text, and innerHTML should be used sparingly as it can create security risks
+if misused. check out this video "shorturl.at/dgy03" if you want to see an example of how.
+
+Keep in mind that JavaScript does not alter your HTML, but the DOM - your HTML file will look the same,
+but the JavaScript changes what the browser renders.
+
+Useful video about emmet "https://www.youtube.com/watch?v=V8vizNQKtx0"
+
+SVG: scalable vector graphics
+
+
+Instantiating an object using a factory takes 0.0004 ms
+Instantiating a class takes 0.0002 ms
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/index.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <nav>
+        <div id="popup">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            <div class="icon">
+                <i class="fa-regular fa-circle-check"></i>
+            </div>
+            <h1>
+                Todo List
+            </h1>
+        </div>
+        <div id="switch-mode">
+            <i class="fa-solid fa-toggle-off"></i>
+        </div>
+    </nav>
+    <div class="aside">
+        <div class="top">
+            <div class="up">
+                <h1>Home</h1>
+                <hr>
+            </div>
+            <div class="down">
+                <div class="row one" id="all-tasks">
+                    <i class="fa-solid fa-list-check"></i>
+                    <p>All Tasks</p>
+                </div>
+                <div class="row two" id="today">
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <p>Today</p>
+                </div>
+                <div class="row three" id="next-week">
+                    <i class="fa-solid fa-calendar-week"></i>
+                    <p>Next Week</p>
+                </div>
+                <div class="row four" id="important">
+                    <i class="fa-regular fa-star"></i>
+                    <p>Important</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="up">
+                <h1>Projects</h1>
+                <hr>
+            </div>
+            <div class="down">
+                <div id="tasks">
+                </div>
+                <div class="project-form">
+                    <form action="" id="theform">
+                        <input type="text" name="project-name" id="project-name" placeholder="Project Name">
+                        <div class="buttons">
+                            <button type="submit" id="submitTheProjectName">Add</button>
+                            <button id="removeIt" type="button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="project-form-edit">
+                    <form action="" id="theformedit">
+                        <input type="text" name="project-name-edit" id="project-name-edit" placeholder="Project Name">
+                        <div class="buttons">
+                            <button type="submit" id="submitTheProjectNameEdit">Add</button>
+                            <button id="removeItEdit" type="button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="add-project">
+                    <div id="add-a-project">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <p>Add Project</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h1 id="headerName"></h1>
+        </div>
+        <div class="container">
+            <!-- <div class="task">
+                <div class="name">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>cpp</p>
+                </div>
+                <div class="icons">
+                    <div class="important">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="threedots">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="add-sub-task">
+            <form action="" id="tasksform">
+                <input type="text" name="task-name" id="task-name" placeholder="Task Name">
+                <input type="text" name="task-description" id="task-description" placeholder="Task Description">
+                <input type="date" name="deadline" id="deadline">
+                <div class="buttons">
+                    <button type="submit" id="submitTask">Submit</button>
+                    <button type="button" id="cancelTask">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="add-task">
+            <div id="add-a-task">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <p>Add Task</p>
+        </div>
+    </div>
+    <div class="fancy-popup">
+        <div class="row">
+            <p class="popup-name">Somthing</p>
+        </div>
+        <div class="row">
+            <p class="popup-description">Somthing</p>
+        </div>
+        <div class="row">
+            <p class="popup-date">Somthing</p>
+        </div>
+        <div class="row">
+            <p class="popup-priority">Somthing</p>
+        </div>
+    </div>
+
+    <script type="module" src="../src/index.js"></script>
+    <script type="module" src="../src/dom.js"></script>
+    <script type="module" src="../src/var.js"></script>
+    <script src="https://kit.fontawesome.com/a8e0361d47.js" crossorigin="anonymous"></script>
+</body>
+</html>
