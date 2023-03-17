@@ -69,7 +69,7 @@ nav .logo .icon i {
     cursor: pointer;
 }
 .aside .top .down .row:hover {
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 .aside .top .down .row p {
     color: white;
@@ -115,7 +115,7 @@ nav .logo .icon i {
     cursor: pointer;
 }
 #task:hover {
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 #dots {
     position: absolute;
@@ -140,7 +140,7 @@ nav .logo .icon i {
     font-size: 17px;
 }
 #add-project:hover {
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 .aside .bottom .down .project-form {
     margin-left: 30px;
@@ -213,6 +213,11 @@ nav .logo .icon i {
     background-color: #192734;
     /* display: none; */
 }
+@media (max-width: 410px) {
+    .content {
+        min-height: 400px;
+    }
+}
 .content .header {
     background-color: #1F8D4D;
     color: white;
@@ -240,7 +245,7 @@ nav .logo .icon i {
     font-size: 17px;
 }
 #add-task:hover {
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 .add-sub-task {
     /* background-color: #7f8c8d; */
