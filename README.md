@@ -25,7 +25,7 @@ This repository contains my personal learning journey through The Odin Project w
 ## Installation
 1. Clone this repository to your local machine using 'git clone https://github.com/your-username/The-Odin-Project.git'
 
-2. Navigate to the root directory of the project using 'cd The-Odin-Project'
+2. Navigate to the root directory of the project using ```cd The-Odin-Project```
 
 3. Install the necessary dependencies using 'npm install'
 
